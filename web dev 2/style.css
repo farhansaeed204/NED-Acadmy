@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    background-color: lightgray;
+    padding-inline: 50px;
+    padding-block: 8px;
+    width: 100vw;
+    height: fit-content;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.navlinks{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+}
+.btn,.btn2{
+    background-color: rgb(142, 139, 139);
+    border: none;
+    border-radius: 15px;
+    padding-block: 4px;
+    padding-inline: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.btn:hover,.btn2:hover{
+    background-color: black;
+    color: white;
+}
+.menu{
+    display: none;
+}
+.herosec{
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    /* padding-inline: 100px; */
+    height: 70vh;
+    width: 100%;
+}
+.herotext{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background-color: lightgray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 20px;
+    height: 100%;
+    margin-top: 50px;
+    width: 400px;
+    height: 75%;
+    border-radius: 20px;
+    
+}
+.heading{
+    font-size: 40px;
+}
+.para{
+    font-size: 15px;
+    padding-block: 20px;
+}
+.btn2{
+    padding-block: 10px;
+    width: fit-content;
+    margin-bottom: 0px;
+}
+.imgdiv{
+    margin-top: 50px;
+    width: 400px;
+    height: 75%;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.quizsec{
+    background-color: rgb(101, 55, 156);
+    padding-top: 30px;
+    margin-top: 50px;
+    height: 600px;
+    width: 100%;
+
+}
+.head1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+}
+.head5{
+    padding-top: 10px;
+    text-align: center;
+}
+.boxex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+} 
+.box1{
+    height: 300px;
+    width: 400px;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+    height: 300px;
+    width: 400px;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maindiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    
+}
+.color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding-top: 60px;
+    width: 100%;
+    height: 600px;
+   
+}
+
+.head{
+    font-size: 50px;
+}
+
+
+@media(max-width: 900px){
+    .menu{
+        display: block;
+    }
+    .navlinks,.btn{
+        display: none;
+    }
+    .navlinks.show{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0px;
+        top: 45px;
+        background-color: lightgrey;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .herosec{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100vh;
+    }
+    .quizsec{
+        height: fit-content;
+        width: 100%;
+    }
+    .boxex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+} 
+}
