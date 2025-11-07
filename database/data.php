@@ -22,6 +22,14 @@
         echo "Connection made";
     }
 
+    $query = "INSERT INTO `students` (name, course, marks) VALUES('ALI', '2', '90')";
+
+    if(mysqli_query($conn, $query)){
+        echo "data save";
+    }else{
+        echo "error";
+    }
+
     ?>
 </body>
 </html>
