@@ -10,11 +10,20 @@
     $conn = mysqli_connect("localhost", "root", "", "new");
 
     if(!$conn){
-        die("Connection faild");
+        die("Connection faild"). "<br>";
     }else{
-        echo "Connected";
+        echo "Connected". "<br>";
     }
-    $readqury = "SELECT"
+
+    // 2nd step: query
+    $readquery = "SELECT * FROM `students`";
+    $result = mysqli_query($conn, $readquery);
+
+    if(mysqli_num_rows($result) > 0){
+        echo "yes". "<br>";
+    }else{
+        echo "no data found";
+    }
     ?>
 </body>
 </html>
