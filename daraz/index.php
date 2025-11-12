@@ -13,6 +13,7 @@
         .card{
             display: flex;
             flex-direction: column;
+            
         }
     </style>
 </head>
@@ -32,8 +33,11 @@
         echo "<div class='container'>";
         foreach($products as $product){
             echo "<div class='card'>";
-            echo $product["product_name"];
-            echo $product["price"];
+            // echo $product["product_name"];
+            // echo $product["price"];
+            echo "<h1>". $product["product_name"]. "</h1>";
+            echo "<p>". $product["price"]. "<p>";
+
             echo "</div>";
         }
         echo "</div>";
